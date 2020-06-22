@@ -1,0 +1,52 @@
+$usual-font: sans-serif, Helvetica, Arial;
+$color-bg: white;
+
+body{
+    font-family: $usual-font;
+}
+
+
+nav{
+
+    background-color: $color-bg;
+    img{
+        float: left;
+        height: 150px;
+    }
+        
+    li{
+            display: block;
+            float: left;
+            padding: 25px;
+            line-height: 100px;
+            text-decoration: none;
+    }
+            
+    a{
+                color: black;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 500;
+                text-transform: uppercase;
+                transition: all 300ms;
+    }
+    a:hover{
+        color: gray;
+    }
+}
+
+%alert-normal{
+    font-family: $usual-font;
+
+    border: 1px solid gray;
+    background: #ccc;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.alert{
+    @extend %alert-normal;
+}
